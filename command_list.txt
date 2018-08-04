@@ -1,0 +1,1 @@
+1. Run `mix phx.server phoenix_ajax` to create a new project

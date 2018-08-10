@@ -9,3 +9,12 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+alias PhoenixAjax.Orders
+
+orders1 = %{name: "Blake", item: "Samsung S8"}
+orders2 = %{name: "Don", item: "Rolex wrist watch"}
+
+Orders.create_order(orders1)
+Orders.create_order(orders2)
+
+

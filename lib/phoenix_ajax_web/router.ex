@@ -17,6 +17,8 @@ defmodule PhoenixAjaxWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/orders", OrderController, except: [:delete, :edit, :update, :new]
+    get "/orders/:query", OrderController, :search
   end
 
   # Other scopes may use custom stacks.

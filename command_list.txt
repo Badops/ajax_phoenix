@@ -1,1 +1,9 @@
 1. Run `mix phx.server phoenix_ajax` to create a new project
+2. Run `mix ecto.create` to create database
+3. Run `mix deps.get` to fetch dependencies
+4. Run `mix phx.gen.json Orders Order orders name:string item:string` to create order context and order services
+5. Run `mix ecto.migrate` to migrate database
+6. Run `mix run /priv/seeds.exs` to seed data
+7. Run `mix phx.server` to start server
+
+
